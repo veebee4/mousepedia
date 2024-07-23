@@ -18,6 +18,7 @@ class Park(db.Model):
     special_features = db.Column(db.Text, nullable=False)
     transport_between_parks = db.Column(db.Text, nullable=False)
     restaurants = db.relationship("Restaurant", backref="park", cascade="all, delete", lazy=True)
+    rides = db.relationship("Ride", backref="park", cascade="all, delete", lazy=True)
 
     def __repr__(self):
         # __repr__ to represent itself in the form of a string
@@ -33,11 +34,14 @@ class Restaurant(db.Model):
     park_id = db.Column(db.Integer, db.ForeignKey("park.id"), nullable=False)
     restaurant_location = db.Column(db.Text, nullable=False)
     dine_or_quick_service = db.Column(db.Boolean, default=False, nullable=False)
+    food_type = db.Column(db.String(30), nullable=False)
+    restaurant_description = db.Column(db.Text, nullable=False)
+    parks = db.relationship("Park", backref="restaurant", cascade="all, delete", lazy=True)
 
 
     def __repr__(self):
         # __repr__ to represent itself in the form of a string
-        return self
+        return self.restaurant_name
 
 
 
@@ -46,7 +50,11 @@ class Ride(db.Model):
     __tablename__ = 'rides'
     id = db.Column(db.integer, primary_key=True)
     ride_name = db.Column(db.String(50), unique=True, nullable=False)
+    park_id = db.Column(db.Integer, db.ForeignKey("park.id", ondelete="CASCADE"), nullable=False)
+    ride_location = db.Column(db.String(50), nullable=False)
+    ride_description = db.Column(db.Text, nullable=False)
+    parks = db.relationship("Park", backref="ride", cascade="all, delete", lazy=True)
 
     def __repr__(self):
         # __repr__ to represent itself in the form of a string
-        return self
+        return self.ride_name
