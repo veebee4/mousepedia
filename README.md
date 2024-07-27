@@ -1,6 +1,6 @@
 # Mousepedia
 
-### Mouse
+### All things Disney...
 
 ![]()
 
@@ -101,15 +101,15 @@ ___
 
 ## Colour Scheme
 
-The colour scheme used for this project was based on the colors from the Disney Parks website. This provides the user with some familiarity whilst providing enough contrast between the website elements and text.
+The colour scheme used for this project was based on the colors from the Disney Parks website, but in conjunction with the choice provided by the Materialize framework. This provides the user with some familiarity whilst providing enough contrast between the website elements and text.
 
 ## Typography
 
-
+For the main logo featured on the navbar, I used the google font 'Graduate' and for the body of the page, I used Englebert.
 
 ## Logo and Favicon
 
-The logo was created using a free online logo maker - [Brandcrowd](https://www.brandcrowd.com/)
+
 
 ## Wireframes
 
