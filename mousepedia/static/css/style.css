@@ -45,6 +45,10 @@ main {
     padding-bottom: 0.5rem;
 }
 
+.nav-link {
+    font-family: Graduate;
+}
+
 /* ---------------------------------------- Home Page */
 
 .home-heading {

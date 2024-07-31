@@ -18,10 +18,10 @@
                 <a href="#!" class="brand-logo white-text text-align-center">Mousepedia</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-circle-chevron-down light-blue-text text-lighten-4"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="">Parks</a></li>
-                    <li><a href="">Rides</a></li>
-                    <li><a href="">Restaurants</a></li>
+                    <li class="nav-link"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-link"><a href="{{ url_for('parks') }}">Parks</a></li>
+                    <li class="nav-link"><a href="">Rides</a></li>
+                    <li class="nav-link"><a href="">Restaurants</a></li>
                 </ul>
             </div>
         </nav>
@@ -29,7 +29,7 @@
         <!-- mobile nav bar -->
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="">Parks</a></li>
+            <li><a href="{{ url_for('parks') }}">Parks</a></li>
             <li><a href="">Rides</a></li>
             <li><a href="">Restaurants</a></li>
         </ul>
