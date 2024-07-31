@@ -1,24 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Englebert&family=Graduate&display=swap');
 
-html {
+/* ---------------------------------------- Special paddings/margins/text */
+/*html {
     height: 100%;
 }
+
+/*-------------------------------------------- Colors*/
 
 body {
     background: rgb(26,147,215);
     background: linear-gradient(0deg, rgba(26,147,215,1) 0%, rgba(111,184,230,1) 35%, rgba(251,255,250,1) 100%);
+}
+
+.brand-logo {
+    -webkit-text-stroke: 1px #1a93d7;
+}
+
+.fa-hat-wizard {
+    -webkit-text-stroke: 2px #1a93d7;
+}
+
+/* ---------------------------------------- Body */
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: Englebert;
 }
 
+/*-------------------------------------------- Header & Nav */
 main {
     flex: 1 0 auto;
 }
 
 .brand-logo {
     font-family: Graduate;
-    -webkit-text-stroke: 1px #1a93d7;
 }
 
 #nav-logo {
@@ -29,8 +45,30 @@ main {
     padding-bottom: 0.5rem;
 }
 
+/* ---------------------------------------- Home Page */
+
+.home-heading {
+    font-family: Graduate;
+    font-weight: 900;
+}
+
+.home-tagline {
+    font-weight: 500;
+}
+
+/* ---------------------------------------- Parks Page */
+
+/* ---------------------------------------- Rides Page */
+
+/* ---------------------------------------- Restaurant Page */
+
+/* ---------------------------------------- Footer */
 .footer-heading {
     font-family: Graduate;
+}
+
+.row {
+    margin-bottom: 0;
 }
 
 .fa-book-open {
@@ -41,6 +79,14 @@ main {
     font-size: 1.5rem;
     margin-left: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.links-heading {
+    font-family: Graduate;
+}
+
+.links {
+    font-size: 1.5rem;
 }
 
   
