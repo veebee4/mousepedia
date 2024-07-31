@@ -10,3 +10,7 @@ def home():
 @app.route("/parks")
 def parks():
     return render_template("parks.html")
+
+@app.route("/add_park", methods=["GET", "POST"])
+def add_park():
+    return render_template("add_park.html")

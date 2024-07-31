@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Englebert&family=Graduate&display=swap');
 
-/* ---------------------------------------- Special paddings/margins/text */
+/* ---------------------------------------- Special headings/paddings/margins/text */
 /*html {
     height: 100%;
+}*/
+
+.page-heading {
+    font-family: Graduate;
+    font-weight: 900;
 }
 
 /*-------------------------------------------- Colors*/
@@ -51,16 +56,15 @@ main {
 
 /* ---------------------------------------- Home Page */
 
-.home-heading {
-    font-family: Graduate;
-    font-weight: 900;
-}
-
 .home-tagline {
     font-weight: 500;
 }
 
 /* ---------------------------------------- Parks Page */
+
+.add-park-btn {
+    margin: 2rem;
+}
 
 /* ---------------------------------------- Rides Page */
 
