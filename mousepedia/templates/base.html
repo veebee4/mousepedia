@@ -15,7 +15,7 @@
             <div class="nav-wrapper">
                 <img src="{{ url_for('static', filename='images/mousepedia-logo.png') }}" id="nav-logo">
                 
-                <a href="#!" class="brand-logo white-text text-align-center">Mousepedia</a>
+                <a href="{{ url_for('home') }}" class="brand-logo white-text text-align-center">Mousepedia</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-circle-chevron-down light-blue-text text-lighten-4"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="nav-link"><a href="{{ url_for('home') }}">Home</a></li>

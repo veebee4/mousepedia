@@ -4,4 +4,89 @@
 <h1 class="blue-text text-darken-4 center-align page-heading"><i class="fa-solid fa-wand-sparkles blue-text text-lighten-3"></i> Add a Park <i class="fa-solid fa-wand-sparkles blue-text text-lighten-3"></i></h1>
 <h6 class="blue-text text-darken-4 center-align">Here you can add a new park to your collection.</h6>
 
+<!-- Form to add a park to the database -->
+<div class="container add_park_form">
+    <div class="row">
+        <form class="col s12" method="POST" action="{{ url_for('add_park') }}">
+            <!-- park_name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="park_name" name="park_name" minlength="5" maxlength="50" type="text" required>
+                    <label for="park_name">Park Name</label>
+                </div>
+            </div>
+            <!-- park_address -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="park_address" name="park_address" minlength="5" maxlength="50" type="text" class="validate" required>
+                    <label for="park_address">Address</label>
+                </div>
+            </div>
+            <!-- park_description -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="park_description" name="park_description" class="materialize-textarea" required></textarea>
+                    <label for="park_description">Description</label>
+                </div>
+            </div>
+            <!-- date_opened -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" name="date_opened" class="datepicker">
+                    <label for="date_opened">Date Opened</label>
+                </div>
+            </div>
+            <!-- opening_times -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="opening_times" name="opening_times" type="text" class="validate" required>
+                    <label for="opening_times">Opening Times</label>
+                </div>
+            </div>
+            <!-- num_restaurants -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="num_restaurants" name="num_restaurants" type="number" class="validate">
+                    <label for="num_restaurants">How many restaurants are at this park?</label>
+                </div>
+            </div>
+            <!-- num_rides -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="num_rides" name="num_rides" type="number" class="validate">
+                    <label for="num_rides">How many rides are at this park?</label>
+                </div>
+            </div>
+            <!-- entertainment -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="entertainment" name="entertainment" class="materialize-textarea"></textarea>
+                    <label for="entertainment">What entertainment/shows does this park have?</label>
+                </div>
+            </div>
+            <!-- special_features -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="special_features" name="special_features" class="materialize-textarea"></textarea>
+                    <label for="special_features">Does this park have any special features?</label>
+                </div>
+            </div>
+            <!-- transport_between_parks -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="transport_between_parks" name="transport_between_parks" class="materialize-textarea"></textarea>
+                    <label for="transport_between_parks">Does this park have transport to other Disney Parks?</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button class="btn-large" type="submit" name="action">
+                        Add Park
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
 {% endblock %}

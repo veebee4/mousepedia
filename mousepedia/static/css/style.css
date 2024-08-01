@@ -66,6 +66,13 @@ main {
     margin: 2rem;
 }
 
+/* ---------------------------------------- Add Parks Page */
+
+.add_park_form {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 /* ---------------------------------------- Rides Page */
 
 /* ---------------------------------------- Restaurant Page */
