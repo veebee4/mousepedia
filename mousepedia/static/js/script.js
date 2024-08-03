@@ -10,5 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Datepicker.init(dateOpened);
   });
 
-  $('.materialize-textarea').val('New Text');
-  M.textareaAutoResize($('.materialize-textarea'));
+  document.addEventListener('DOMContentLoaded', function() {
+    // initialises the time picker for time_open & time_closed on the add_park form
+    let openingTimes = document.querySelectorAll('.timepicker');
+    M.Timepicker.init(openingTimes);
+  });
+
+  // initialises the character counter function
+  document.addEventListener('DOMContentLoaded', function() {
+    let textCount = document.querySelectorAll('#input_text');
+    M.CharacterCounter.init(textCount);
+});

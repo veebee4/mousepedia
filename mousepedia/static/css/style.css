@@ -21,8 +21,20 @@ body {
     -webkit-text-stroke: 1px #1a93d7;
 }
 
-.fa-hat-wizard {
-    -webkit-text-stroke: 2px #1a93d7;
+/* label color on forms */
+.input-field label {
+    color: #000;
+}
+
+/* label focus color on text rows on forms */
+.input-field input[type=text]:focus + label {
+    color: #0d47a1;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #0d47a1;
+    box-shadow: 0 1px 0 0 #0d47a1;
 }
 
 /* ---------------------------------------- Body */
