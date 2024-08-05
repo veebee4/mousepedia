@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Englebert&family=Graduate&display=swap');
 
 /* ---------------------------------------- Special headings/paddings/margins/text */
+
 /*html {
     height: 100%;
 }*/
@@ -17,27 +18,18 @@ body {
     background: linear-gradient(0deg, rgba(26,147,215,1) 0%, rgba(111,184,230,1) 35%, rgba(251,255,250,1) 100%);
 }
 
+/* logo on nav */
 .brand-logo {
     -webkit-text-stroke: 1px #1a93d7;
 }
 
 /* label color on forms */
 .input-field label {
-    color: #000;
-}
-
-/* label focus color on text rows on forms */
-.input-field input[type=text]:focus + label {
     color: #0d47a1;
 }
 
-/* label underline focus color */
-.input-field input[type=text]:focus {
-    border-bottom: 1px solid #0d47a1;
-    box-shadow: 0 1px 0 0 #0d47a1;
-}
-
 /* ---------------------------------------- Body */
+
 body {
     display: flex;
     min-height: 100vh;
@@ -46,6 +38,7 @@ body {
 }
 
 /*-------------------------------------------- Header & Nav */
+
 main {
     flex: 1 0 auto;
 }
@@ -83,6 +76,19 @@ main {
 .add_park_form {
     margin-top: 4rem;
     margin-bottom: 4rem;
+}
+
+label {
+    font-weight: 700;
+    font-size: 1.2rem !important;
+}
+
+.submit-button {
+    border-radius: 10px;
+    margin: 3rem;
+    font-family: Englebert;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 /* ---------------------------------------- Rides Page */
