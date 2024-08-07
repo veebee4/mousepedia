@@ -11,4 +11,21 @@
     </div>
 </div>
 
+<div class="row">
+    {% for park in parks %}
+    <div class="card col s12 m6 l3">
+        <div class="card-image blue darken-4">
+            <img class="" src="">
+        </div>
+        <div class="card-content white-text">
+            <span class="card-title activator grey-text text-darken-4">{{ park.park_name }}</span>
+            <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

@@ -3,6 +3,14 @@ from flask import render_template, session, request, redirect, url_for
 from mousepedia import app, db
 from mousepedia.models import Park, Restaurant, Ride
 
+@app.route("/check_db")
+def check_db():
+    try:
+        # Perform a simple query to check the connection
+        db.session.execute('SELECT 1')
+        return "Database connection is working."
+    except Exception as e:
+        return f"Database connection failed: {e}"
 
 @app.route("/")
 def home():
@@ -11,6 +19,7 @@ def home():
 
 @app.route("/parks")
 def parks():
+    parks = list(Park.query.order_by(Park.park_name).all())
     return render_template("parks.html", parks=parks)
 
 
